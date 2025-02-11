@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Lucía ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #cc0000;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        button {
+            padding: 15px 40px;
+            font-size: 18px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 200px;
+        }
+        button:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para ti, Lucía ❤️</h1>
+    <p>Presiona el botón del día y descubre algo especial...</p>
+
+    <div class="button-container">
+        <button onclick="mostrarMensaje('lunes')">Lunes</button>
+        <button onclick="mostrarMensaje('martes')">Martes</button>
+        <button onclick="mostrarMensaje('miércoles')">Miércoles</button>
+        <button onclick="mostrarMensaje('jueves')">Jueves</button>
+        <button onclick="mostrarMensaje('viernes')">Viernes</button>
+        <button onclick="mostrarMensaje('sábado')">Sábado</button>
+        <button onclick="mostrarMensaje('domingo')">Domingo</button>
+    </div>
+
+    <script>
+        function mostrarMensaje(dia) {
+            let mensaje = '';
+
+            switch(dia) {
+                case 'lunes':
+                    mensaje = '¡Feliz lunes, mi amor! Eres la mejor manera de empezar la semana. ❤️';
+                    break;
+                case 'martes':
+                    mensaje = '¡Feliz martes! Cada día contigo es un regalo. 🌟';
+                    break;
+                case 'miércoles':
+                    mensaje = '¡Mitad de semana y ya te extraño! 💕';
+                    break;
+                case 'jueves':
+                    mensaje = '¡Feliz jueves! Gracias por hacer mi vida más bonita. 🌸';
+                    break;
+                case 'viernes':
+                    mensaje = '¡Es viernes y no puedo esperar para verte! 😍';
+                    break;
+                case 'sábado':
+                    mensaje = '¡Feliz sábado, amor! Mi plan favorito siempre eres tú. 💖';
+                    break;
+                case 'domingo':
+                    mensaje = '¡Domingo de mimos y amor infinito! Eres mi paz. 🥰';
+                    break;
+                default:
+                    mensaje = '¡Te amo cada día más! ❤️';
+            }
+
+            alert(mensaje);
+        }
+    </script>
+</body>
+</html>
